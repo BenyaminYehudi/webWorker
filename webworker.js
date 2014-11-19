@@ -4,10 +4,9 @@ function multiplesOfSeven() {
     while(true){
         i++
         if(i%7==0){
-            postMessage(i);    
+            postMessage(i);   
         }
-        
-    
+         setTimeout("multiplesOfSeven()",500);
     }
 }
 
