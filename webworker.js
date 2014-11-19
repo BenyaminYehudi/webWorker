@@ -1,9 +1,14 @@
-var i = 0;
+var i= 0;
 
-function timedCount() {
-    i = i + 1;
-    postMessage(i);
-    setTimeout("timedCount()",500);
+function multiplesOfSeven() {
+    while(true){
+        i++
+        if(i%7==0){
+            postMessage(i);    
+        }
+        
+    
+    }
 }
 
-timedCount();
+multiplesOfSeven();
